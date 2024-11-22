@@ -1,5 +1,5 @@
 
-train: /Users/andy/Projects/github.com/andy277/yolo11_train_model/data/task_019_tripteroides_atripes_dataset_2024_08_13_08_49_21_coco/annotations/instances_Train.json
+train: data/task_019_tripteroides_atripes_dataset_2024_08_13_08_49_21_coco/annotations/instances_Train.json
 val: ""
 
 nc: 40
