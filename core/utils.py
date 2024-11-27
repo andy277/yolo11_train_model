@@ -1,6 +1,5 @@
 import torch
 import torch.optim as optim
-from tests.test_python import image
 from torch.utils.data import DataLoader
 from torchvision import transforms
 from pycocotools.coco import COCO
@@ -8,10 +7,11 @@ from ultralytics import YOLO
 import os
 from PIL import Image
 
+
 model = YOLO('yolo11n-seg.pt')
 
 data_path = '../data/task_019_tripteroides_atripes_dataset_2024_08_13_08_49_21_coco/images/'
-annotation_path = '../data/task_019_tripteroides_atripes_dataset_2024_08_13_08_49_21_coco/annotations//instances_Train.json'
+annotation_path = '../data/task_019_tripteroides_atripes_dataset_2024_08_13_08_49_21_coco/annotations/instances_Train.json'
 
 batch_size = 16
 learning_rate = 0.001
